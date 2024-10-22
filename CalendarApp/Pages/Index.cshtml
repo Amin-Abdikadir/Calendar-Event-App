@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Calendar Event App";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <label for="eventDate">Select a date:</label>
+    <input type="date" id="eventDate" name="EventDate" required>
+    
+    <label for="eventDetails">Event details:</label>
+    <input type="text" id="eventDetails" name="EventDetails" required>
+    
+    <button type="submit">Add Event</button>
+</form>
+
+@if (Model.Events != null)
+{
+    <h3>Events:</h3>
+    <ul>
+        @foreach (var ev in Model.Events)
+        {
+            <li>@ev.Date: @ev.Details</li>
+        }
+    </ul>
+}
