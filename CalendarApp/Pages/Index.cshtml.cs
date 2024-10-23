@@ -32,6 +32,7 @@ public class IndexModel : PageModel
 
 public class Event
 {
+    public int Id { get; set; }  // Primary Key
     public string Date { get; set; }
     public string Details { get; set; }
 }
