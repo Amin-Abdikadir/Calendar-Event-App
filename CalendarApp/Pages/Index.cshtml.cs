@@ -1,38 +1,48 @@
+using CalendarApp.Data;
+using CalendarApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
+using System.Linq;
 
 public class IndexModel : PageModel
 {
-    public List<Event> Events { get; set; } = new List<Event>();
+    private readonly AppDbContext _context;
+
+    public IndexModel(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public List<CalendarEvent> Events { get; set; }
 
     [BindProperty]
     public string EventDate { get; set; }
+
+    [BindProperty]
+    public string EventTitle { get; set; }  // Add EventTitle property
 
     [BindProperty]
     public string EventDetails { get; set; }
 
     public void OnGet()
     {
-        // Initialize or load any stored events here
+        // Load events from the database
+        Events = _context.CalendarEvents.ToList();
     }
 
     public IActionResult OnPost()
     {
-        // Add event to the list
-        Events.Add(new Event
+        var newEvent = new CalendarEvent
         {
-            Date = EventDate,
-            Details = EventDetails
-        });
+            Date = DateTime.SpecifyKind(DateTime.Parse(EventDate), DateTimeKind.Utc),  // Ensure DateTime is in UTC
+            Title = EventTitle,  // Add the Title here
+            Description = EventDetails
+        };
 
-        return Page();
+        _context.CalendarEvents.Add(newEvent);
+        _context.SaveChanges();  // Save event to the database
+
+        return RedirectToPage();
     }
-}
-
-public class Event
-{
-    public int Id { get; set; }  // Primary Key
-    public string Date { get; set; }
-    public string Details { get; set; }
 }
