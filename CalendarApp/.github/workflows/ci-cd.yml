@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Trigger the pipeline only on push to the main branch
+      - main # Trigger the pipeline only on push to the main branch
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '8.0.x'
+          dotnet-version: "6.0.x"
 
       - name: Install dependencies
         run: dotnet restore
@@ -30,5 +30,5 @@ jobs:
       - name: Publish application
         run: dotnet publish -c Release -o ./publish
 
-      - name: Deploy to Render/Netlify (example for Render)
+      - name: Deploy to Render
         run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
