@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vrUoyUhxXBQ=",
+  "dgSpecHash": "UbZWLbVYgU0=",
   "success": true,
   "projectFilePath": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/CalendarApp.csproj",
   "expectedPackageFiles": [
@@ -23,10 +23,7 @@
     "/Users/amino/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.0/npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
     "/Users/amino/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/amino/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "/Users/amino/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/amino/.nuget/packages/microsoft.netcore.app.ref/6.0.35/microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
-    "/Users/amino/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.35/microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512",
-    "/Users/amino/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.35/microsoft.netcore.app.host.osx-arm64.6.0.35.nupkg.sha512"
+    "/Users/amino/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
