@@ -2,8 +2,7 @@ using CalendarApp.Data;
 using CalendarApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace CalendarApp.Pages  // Add the correct namespace
 {

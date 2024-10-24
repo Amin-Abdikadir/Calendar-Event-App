@@ -1,0 +1,21 @@
+/* wwwroot/css/custom.css */
+
+/* Change the color and font size of h2 headings */
+h2 {
+    color: #1b6ec2;
+    font-size: 2rem;
+  }
+
+  /* Style primary buttons */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+
+  /* Add more spacing to form groups */
+.form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  

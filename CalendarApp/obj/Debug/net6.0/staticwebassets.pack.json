@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/custom.css",
+      "PackagePath": "staticwebassets/custom.css"
+    },
+    {
       "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

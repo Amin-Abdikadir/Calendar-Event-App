@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I2QJcFgBxVbhgmJc1gaaemrs/R4AWaddIMYAgg/fueM=",
+  "Hash": "yp0iozcl8ElmuFgf48MnCrhcEGTcW7AvheCVF4GoQkc=",
   "Source": "CalendarApp",
   "BasePath": "_content/CalendarApp",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/custom.css",
+      "SourceId": "CalendarApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/",
+      "BasePath": "_content/CalendarApp",
+      "RelativePath": "custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/custom.css"
     },
     {
       "Identity": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/favicon.ico",

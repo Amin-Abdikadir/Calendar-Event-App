@@ -28,18 +28,19 @@
     </form>
 
     <!-- Event List -->
-    @if (Model.Events != null && Model.Events.Any())
-    {
-        <h3 class="mt-5">Events:</h3>
-        <ul class="list-group">
-            @foreach (var ev in Model.Events)
-            {
-                <li class="list-group-item">
-                    <strong>@ev.Date.ToShortDateString():</strong> @ev.Title - @ev.Description
-                </li>
-            }
-        </ul>
-    }
+@if (Model.Events != null && Model.Events.Any())
+{
+    <h3 class="mt-5">Events:</h3>
+    <ul class="list-group">
+        @foreach (var ev in Model.Events)
+        {
+            <li class="list-group-item">
+                <strong>@ev.Date.ToString("dd/MM/yyyy"):</strong> @ev.Title - @ev.Description
+            </li>
+        }
+    </ul>
+}
 </div>
+
 
 
