@@ -1,35 +1,75 @@
-# Calendar Event App
+Calendar Event Application
+==========================
 
-This is a simple calendar application that allows users to:
-1. Select a date from a calendar.
-2. Add an event to the selected date.
-3. Store and retrieve the event.
-4. Display stored events on the calendar.
+This is a simple calendar event application where users can:
 
-## Tech Stack
-- Backend: ASP.NET Core with C#
-- Frontend: Razor Pages (HTML, C#)
-- Database: PostgreSQL
-- Deployment: Render (Backend), Netlify (Frontend)
-- CI/CD: GitHub Actions for automation of building, testing, and deploying the application.
+1.  Select a date.
+    
+2.  Add an event to the selected date.
+    
+3.  Store the event in a PostgreSQL database.
+    
+4.  Retrieve and display the event.
+    
 
-## Features
-- Create, retrieve, and manage calendar events.
-- Simple, easy-to-use UI for adding and viewing events.
-- Data persistence using PostgreSQL.
+The project is built using ASP.NET Core (Razor Pages), with a PostgreSQL database for data storage. The application is deployed using Render for the backend, and the CI/CD pipeline is handled by GitHub Actions.
 
-## Future Enhancements
-- User authentication for personalised events.
-- Event reminders via email or notifications.
-- Improve calendar design and add additional views.
+Features
+--------
 
-## Setup
-To run this project, you will need to:
-1. Clone this repository.
-2. Set up PostgreSQL and update the connection string.
-3. Run the backend using ASP.NET Core.
-4. Serve the frontend using Razor Pages.
+*   **Event Management:** Users can create events with a title and description for specific dates.
+    
+*   **PostgreSQL Integration:** Events are stored persistently in a PostgreSQL database.
+    
+*   **CI/CD Pipeline:** Automated testing, building, and deployment using GitHub Actions.
+    
 
-## CI/CD
-The project includes a GitHub Actions pipeline to automate deployment. The backend is deployed on Render, and the frontend will be deployed on Netlify.
+Installation
+------------
+
+### Prerequisites
+
+*   .NET 6 SDK
+    
+*   PostgreSQL
+    
+*   Git
+    
+
+git clone https://github.com/Amin-Abdikadir/Calendar-Event-App.gitcd Calendar-Event-App
+
+I created a PostgreSQL database called calendarapp\_db. You’ll need to do the same, or you can adjust the connection string in appsettings.json to fit your environment.jsonCopy code"ConnectionStrings": { "DefaultConnection": "Host=your-db-host;Database=calendarapp\_db;Username=your-username;Password=your-password"}
+
+bashCopy codedotnet restoredotnet run You should now be able to access the app at [https://localhost:5001](https://localhost:5001/).
+
+CI/CD Pipeline
+--------------
+
+I've set up GitHub Actions for continuous integration and deployment. Every time I push new changes to the mainbranch, GitHub Actions runs automated tests and builds the project. If everything passes, the app is automatically deployed to Render.
+
+GitHub Project & Tickets
+------------------------
+
+To manage this project, I used GitHub’s built-in project management board to create and track tickets for each task. You can check out the project board and see how everything was broken down [here](https://github.com/Amin-Abdikadir/Calendar-Event-App/projects/1). This helped me stay organised and ensure I hit every milestone.
+
+Deployment
+----------
+
+*   **Backend:** Deployed to Render, which offers easy PostgreSQL integration and free hosting.
+    
+*   **Frontend:** The frontend is embedded within the same ASP.NET Core project for simplicity. In the future, I may consider splitting it out and deploying to a service like Netlify.
+    
+
+Future Plans
+------------
+
+Here are some ideas for future improvements:
+
+*   Add user authentication so that users can manage their own events.
+    
+*   Include the ability to edit and delete events.
+    
+*   Integrate with Google Calendar to provide sync functionality for external calendars.
+    
+*   Enhance the overall design and UX for a better user experience.
 
