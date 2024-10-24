@@ -5,44 +5,47 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Collections.Generic;
 using System.Linq;
 
-public class IndexModel : PageModel
+namespace CalendarApp.Pages  // Add the correct namespace
 {
-    private readonly AppDbContext _context;
-
-    public IndexModel(AppDbContext context)
+    public class IndexModel : PageModel
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
 
-    public List<CalendarEvent> Events { get; set; }
-
-    [BindProperty]
-    public string EventDate { get; set; }
-
-    [BindProperty]
-    public string EventTitle { get; set; }  // Add EventTitle property
-
-    [BindProperty]
-    public string EventDetails { get; set; }
-
-    public void OnGet()
-    {
-        // Load events from the database
-        Events = _context.CalendarEvents.ToList();
-    }
-
-    public IActionResult OnPost()
-    {
-        var newEvent = new CalendarEvent
+        public IndexModel(AppDbContext context)
         {
-            Date = DateTime.SpecifyKind(DateTime.Parse(EventDate), DateTimeKind.Utc),  // Ensure DateTime is in UTC
-            Title = EventTitle,  // Add the Title here
-            Description = EventDetails
-        };
+            _context = context;
+        }
 
-        _context.CalendarEvents.Add(newEvent);
-        _context.SaveChanges();  // Save event to the database
+        public List<CalendarEvent> Events { get; set; }
 
-        return RedirectToPage();
+        [BindProperty]
+        public string EventDate { get; set; }
+
+        [BindProperty]
+        public string EventTitle { get; set; }
+
+        [BindProperty]
+        public string EventDetails { get; set; }
+
+        public void OnGet()
+        {
+            // Load events from the database
+            Events = _context.CalendarEvents.ToList();
+        }
+
+        public IActionResult OnPost()
+        {
+            var newEvent = new CalendarEvent
+            {
+                Date = DateTime.SpecifyKind(DateTime.Parse(EventDate), DateTimeKind.Utc),
+                Title = EventTitle,
+                Description = EventDetails
+            };
+
+            _context.CalendarEvents.Add(newEvent);
+            _context.SaveChanges();  // Save event to the database
+
+            return RedirectToPage();
+        }
     }
 }

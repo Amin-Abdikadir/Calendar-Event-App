@@ -1,32 +1,45 @@
 ﻿@page
-@model IndexModel
+@model CalendarApp.Pages.IndexModel
 @{
     ViewData["Title"] = "Calendar Event App";
 }
 
-<h2>@ViewData["Title"]</h2>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-<form method="post">
-    <label for="eventDate">Select a date:</label>
-    <input type="date" id="eventDate" name="EventDate" required>
+    <!-- Event Form -->
+    <form method="post" class="border p-4 rounded shadow-sm">
+        <div class="mb-3">
+            <label for="eventDate" class="form-label">Select a date:</label>
+            <input type="date" id="eventDate" name="EventDate" class="form-control" required />
+        </div>
 
-    <label for="eventTitle">Event title:</label>
-    <input type="text" id="eventTitle" name="EventTitle" required>
+        <div class="mb-3">
+            <label for="eventTitle" class="form-label">Event title:</label>
+            <input type="text" id="eventTitle" name="EventTitle" class="form-control" required />
+        </div>
 
-    <label for="eventDetails">Event details:</label>
-    <input type="text" id="eventDetails" name="EventDetails" required>
+        <div class="mb-3">
+            <label for="eventDetails" class="form-label">Event details:</label>
+            <input type="text" id="eventDetails" name="EventDetails" class="form-control" required />
+        </div>
 
-    <button type="submit">Add Event</button>
-</form>
+        <button type="submit" class="btn btn-primary w-100">Add Event</button>
+    </form>
+
+    <!-- Event List -->
+    @if (Model.Events != null && Model.Events.Any())
+    {
+        <h3 class="mt-5">Events:</h3>
+        <ul class="list-group">
+            @foreach (var ev in Model.Events)
+            {
+                <li class="list-group-item">
+                    <strong>@ev.Date.ToShortDateString():</strong> @ev.Title - @ev.Description
+                </li>
+            }
+        </ul>
+    }
+</div>
 
 
-@if (Model.Events != null && Model.Events.Any())
-{
-    <h3>Events:</h3>
-    <ul>
-        @foreach (var ev in Model.Events)
-        {
-            <li>@ev.Date.ToShortDateString(): @ev.Title - @ev.Description</li>
-        }
-    </ul>
-}
