@@ -1,13 +1,14 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using CalendarApp.Models; 
+using CalendarApp.Models;
 
 namespace CalendarApp.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        // Define your DbSets (tables) here
-        public DbSet<CalendarEvent> CalendarEvents { get; set; }
+        public DbSet<CalendarEvent>? CalendarEvents { get; set; }
     }
 }

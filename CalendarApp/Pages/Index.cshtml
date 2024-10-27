@@ -7,7 +7,7 @@
 <div class="container mt-5">
     <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-    <!-- Event Form -->
+  
     <form method="post" class="border p-4 rounded shadow-sm">
         <div class="mb-3">
             <label for="eventDate" class="form-label">Select a date:</label>
@@ -27,7 +27,7 @@
         <button type="submit" class="btn btn-primary w-100">Add Event</button>
     </form>
 
-    <!-- Event List -->
+ 
 @if (Model.Events != null && Model.Events.Any())
 {
     <h3 class="mt-5">Events:</h3>

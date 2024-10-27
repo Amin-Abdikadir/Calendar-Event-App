@@ -133,10 +133,6 @@
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
-    },
-    {
       "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
@@ -155,10 +151,6 @@
     {
       "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
-    },
-    {
-      "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
       "Id": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
