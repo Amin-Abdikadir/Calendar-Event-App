@@ -1,71 +1,82 @@
-# Project Plan for Calendar Event App
+### **Step 1: Set Up the Repository**
 
-## Objective
-Build a simple calendar application where users can:
-1. Select a date.
-2. Add an event to the selected date.
-3. Store the event.
-4. Retrieve and display the event.
+*   ✅ Create the GitHub repository and establish a project board to organise the development process.
+    
+*   ✅ Use GitHub Projects for ticket management, allowing for smooth tracking of milestones and task completion.
+    
 
-## Technologies
-- **Frontend**: Razor Pages (ASP.NET Core)
-- **Backend**: C# with ASP.NET Core
-- **Database**: PostgreSQL
-- **CI/CD**: GitHub Actions for pipeline automation
-- **Deployment**: Netlify (Frontend), Render (Backend)
+### **Step 2: Backend Development**
 
----
+*   ✅ Create models representing calendar events.
+    
+*   ✅ Develop RESTful API endpoints:
+    
+    *   POST /events: To add a new event.
+        
+    *   GET /events/{date}: To retrieve events by date.
+        
+*   ✅ Integrate **PostgreSQL** for data persistence, handling all database interactions and migrations.
+    
 
-## Step-by-Step Plan
+### **Step 3: Frontend Development**
 
-### Step 1: Set Up Repository
-- Create a new GitHub repository.
-- Configure GitHub Actions for CI/CD.
-- Add `README.md` and `PLAN.md`.
+*   ✅ Build the frontend using **Razor Pages**, ensuring seamless integration with the backend.
+    
+*   ✅ Design the user interface for:
+    
+    *   Selecting dates.
+        
+    *   Adding events.
+        
+    *   Viewing stored events.
+        
+*   ✅ Use **Bootstrap 5** to create a modern, responsive design.
+    
 
-### Step 2: Build the Backend (ASP.NET Core)
-- Set up a new ASP.NET Core project.
-- Create models for events and dates.
-- Set up RESTful API endpoints:
-  - POST `/events`: Add a new event.
-  - GET `/events/{date}`: Retrieve events for a specific date.
-  
-### Step 3: Integrate PostgreSQL
-- Set up PostgreSQL database on Render.
-- Create tables for storing event data.
-- Implement database migrations in .NET.
+### **Step 4: Connect Frontend and Backend**
 
-### Step 4: Build the Frontend (Razor Pages)
-- Set up Razor Pages within the .NET project.
-- Create a simple UI for:
-  - Selecting dates.
-  - Adding events.
-  - Viewing events for a selected date.
+*   ✅ Ensure the frontend communicates effectively with the backend using API calls.
+    
+*   ✅ Verify that the correct data is displayed promptly and accurately.
+    
 
-### Step 5: Connect Frontend to Backend
-- Use Razor Pages to call the backend API endpoints.
-- Display data in a user-friendly manner.
+### **Step 5: CI/CD Pipeline**
 
-### Step 6: Implement CI/CD Pipeline
-- Set up GitHub Actions for:
-  - Running tests (if any).
-  - Building the project on every push.
-- Automatically deploy the backend to Render.
-- Automatically deploy the frontend to Netlify.
+*   ✅ Configure **GitHub Actions** for:
+    
+    *   Building the project.
+        
+    *   Running tests (if applicable).
+        
+    *   Deploying the backend to **Render**.
+        
+*   Potential future deployment of the frontend to **Netlify** may be considered, but for simplicity, both are currently deployed together on Render.
+    
 
-### Step 7: Testing and Debugging
-- Manually test adding and retrieving events.
-- Ensure all frontend and backend interactions work smoothly.
+Achievements
+------------
 
-### Step 8: Finalise
-- Polish the UI and ensure it works across different devices.
-- Document the project in the `README.md`.
-- Submit the application.
+*   ✅ Deployed the backend to [Render](https://calendar-event-app.onrender.com), where it’s live and ready for use.
 
----
+    
+*   ✅ Implemented **PostgreSQL** for persistent data storage and deployed the app's backend on **Render**.
+    
+*   ✅ Set up a **GitHub Actions** CI/CD pipeline to automate the build, testing, and deployment processes.
+    
+*   ✅ Managed development tasks using GitHub Projects to ensure work was broken down into manageable tasks.
+    
 
-## Future Improvements
-- Add user authentication for personalised event management.
-- Implement a search feature for events.
-- Integrate calendar APIs like Google Calendar for additional features.
+Future Features
+---------------
+
+Several enhancements and new features are planned for the app's future development:
+
+*   **User Authentication:** To allow users to log in and manage their events.
+    
+*   **Event Editing & Deletion:** Giving users the ability to modify or delete events they've created.
+    
+*   **Google Calendar Integration:** Syncing with Google Calendar for more robust event management capabilities.
+    
+*   **UI/UX Enhancements:** Further refining the design to improve the user experience.
+
 
