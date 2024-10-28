@@ -58,10 +58,17 @@
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/CalendarApp.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/CalendarApp.pdb
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Humanizer.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Npgsql.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -74,6 +81,7 @@
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.AssemblyInfoInputs.cache
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.AssemblyInfo.cs
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.csproj.CoreCompileInputs.cache
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.MvcApplicationPartsAssemblyInfo.cs
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.MvcApplicationPartsAssemblyInfo.cache
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.RazorAssemblyInfo.cache
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.RazorAssemblyInfo.cs
@@ -94,11 +102,3 @@
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.pdb
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.genruntimeconfig.cache
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/ref/CalendarApp.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.UI.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/obj/Debug/net6.0/CalendarApp.MvcApplicationPartsAssemblyInfo.cs
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
-/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
