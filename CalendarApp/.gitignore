@@ -1,5 +1,10 @@
 # .gitignore
 
+# Exclude appsettings files with sensitive info
+appsettings.json
+appsettings.Development.json
+
+
 # Build Folders
 bin/
 obj/

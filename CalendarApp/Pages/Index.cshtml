@@ -7,40 +7,46 @@
 <div class="container mt-5">
     <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-  
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            You are not logged in. Your event will be saved temporarily but will be lost if you don't register or log in.
+        </div>
+    }
+
     <form method="post" class="border p-4 rounded shadow-sm">
         <div class="mb-3">
             <label for="eventDate" class="form-label">Select a date:</label>
-            <input type="date" id="eventDate" name="EventDate" class="form-control" required />
+            <input type="date" id="eventDate" asp-for="EventDate" class="form-control" required />
         </div>
 
         <div class="mb-3">
             <label for="eventTitle" class="form-label">Event title:</label>
-            <input type="text" id="eventTitle" name="EventTitle" class="form-control" required />
+            <input type="text" id="eventTitle" asp-for="EventTitle" class="form-control" required />
         </div>
 
         <div class="mb-3">
             <label for="eventDetails" class="form-label">Event details:</label>
-            <input type="text" id="eventDetails" name="EventDetails" class="form-control" required />
+            <input type="text" id="eventDetails" asp-for="EventDetails" class="form-control" required />
         </div>
 
         <button type="submit" class="btn btn-primary w-100">Add Event</button>
     </form>
 
- 
-@if (Model.Events != null && Model.Events.Any())
-{
-    <h3 class="mt-5">Events:</h3>
-    <ul class="list-group">
-        @foreach (var ev in Model.Events)
-        {
-            <li class="list-group-item">
-                <strong>@ev.Date.ToString("dd/MM/yyyy"):</strong> @ev.Title - @ev.Description
-            </li>
-        }
-    </ul>
-}
+    @if (Model.Events != null && Model.Events.Any())
+    {
+        <h3 class="mt-5">Events:</h3>
+        <ul class="list-group">
+            @foreach (var ev in Model.Events)
+            {
+                <li class="list-group-item">
+                    <strong>@ev.Date.ToString("dd/MM/yyyy"):</strong> @ev.Title - @ev.Description
+                </li>
+            }
+        </ul>
+    }
 </div>
+
 
 
 

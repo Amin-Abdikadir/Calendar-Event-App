@@ -57,6 +57,7 @@
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/CalendarApp.runtimeconfig.json
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/CalendarApp.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/CalendarApp.pdb
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/DotNetEnv.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Humanizer.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -72,6 +73,8 @@
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Npgsql.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/Sprache.dll
+/Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/System.Security.Permissions.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/xunit.abstractions.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/xunit.assert.dll
 /Users/amino/Desktop/Calender-Event-App/CalendarApp/bin/Debug/net6.0/xunit.core.dll

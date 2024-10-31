@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lEPwNvAfOyh37FLV/SCpfAdlPTlMBj7LbaMuv4zTXbk=",
+  "Hash": "zukXXOEYjdRQMfwLu8nEOwsxKIR3jkIK+VDynLdtg2Q=",
   "Source": "CalendarApp",
   "BasePath": "_content/CalendarApp",
   "Mode": "Default",
@@ -2238,25 +2238,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
-    },
-    {
-      "Identity": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/jquery/dist/jquery.js",
-      "SourceId": "CalendarApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/",
-      "BasePath": "_content/CalendarApp",
-      "RelativePath": "lib/jquery/dist/jquery.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
       "Identity": "/Users/amino/Desktop/Calender-Event-App/CalendarApp/wwwroot/lib/jquery/dist/jquery.min.js",

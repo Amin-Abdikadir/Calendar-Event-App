@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CalendarApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241027204343_RemoveForeignKeyAndMakeUserIdNullable")]
-    partial class RemoveForeignKeyAndMakeUserIdNullable
+    [Migration("20241031151401_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

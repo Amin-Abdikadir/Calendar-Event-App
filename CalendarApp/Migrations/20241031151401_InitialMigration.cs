@@ -4,7 +4,7 @@
 
 namespace CalendarApp.Migrations
 {
-    public partial class RemoveForeignKeyAndMakeUserIdNullable : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
