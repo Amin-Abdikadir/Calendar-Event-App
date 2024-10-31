@@ -1,82 +1,73 @@
-### **Step 1: Set Up the Repository**
 
-*   ✅ Create the GitHub repository and establish a project board to organise the development process.
-    
-*   ✅ Use GitHub Projects for ticket management, allowing for smooth tracking of milestones and task completion.
-    
+# PLAN.md
 
-### **Step 2: Backend Development**
+## **Step 1: Initial Project Setup**
 
-*   ✅ Create models representing calendar events.
-    
-*   ✅ Develop RESTful API endpoints:
-    
-    *   POST /events: To add a new event.
-        
-    *   GET /events/{date}: To retrieve events by date.
-        
-*   ✅ Integrate **PostgreSQL** for data persistence, handling all database interactions and migrations.
-    
+-   ✅ Created the GitHub repository and organised the development process with a project board.
+-   ✅ Used GitHub Projects for ticket management to stay organised and track progress effectively.
 
-### **Step 3: Frontend Development**
+## **Step 2: Backend Development**
 
-*   ✅ Build the frontend using **Razor Pages**, ensuring seamless integration with the backend.
-    
-*   ✅ Design the user interface for:
-    
-    *   Selecting dates.
-        
-    *   Adding events.
-        
-    *   Viewing stored events.
-        
-*   ✅ Use **Bootstrap 5** to create a modern, responsive design.
-    
+-   ✅ Built foundational models to represent calendar events.
+-   ✅ Integrated  **PostgreSQL**  for data storage, ensuring reliable data persistence and implemented necessary database migrations.
+-   ✅ Set up the backend using  **ASP.NET Core**  with  **Razor Pages**  to keep things simple yet robust.
+-   ✅ Developed API endpoints:
+    -   `POST /events`: For adding new events.
+    -   `GET /events/{date}`: For retrieving events based on the date.
 
-### **Step 4: Connect Frontend and Backend**
+## **Step 3: Frontend Implementation**
 
-*   ✅ Ensure the frontend communicates effectively with the backend using API calls.
-    
-*   ✅ Verify that the correct data is displayed promptly and accurately.
-    
+-   ✅ Constructed the user interface using  **Razor Pages**  for seamless integration.
+-   ✅ Focused on creating an intuitive interface for:
+    -   Selecting event dates.
+    -   Adding new events.
+    -   Displaying stored events in a clear, user-friendly manner.
+-   ✅ Used  **Bootstrap 5**  for a responsive, modern look that adapts to various screen sizes.
 
-### **Step 5: CI/CD Pipeline**
+## **Step 4: Connecting Frontend and Backend**
 
-*   ✅ Configure **GitHub Actions** for:
-    
-    *   Building the project.
-        
-    *   Running tests (if applicable).
-        
-    *   Deploying the backend to **Render**.
-        
-*   Potential future deployment of the frontend to **Netlify** may be considered, but for simplicity, both are currently deployed together on Render.
-    
+-   ✅ Ensured smooth communication between the frontend and backend so that event data flows seamlessly.
+-   ✅ Verified that data retrieved and displayed was correct, with special attention to real-time interactions and updates.
 
-Achievements
-------------
+## **Step 5: Security Measures**
 
-*   ✅ Deployed the backend to [Render](https://calendar-event-app.onrender.com), where it’s live and ready for use.
+-   ✅ Implemented necessary restrictions on database access to prevent unauthorised access, following concerns raised regarding potential database vulnerabilities.
+-   ✅ Ensured that only trusted connections could access the database by adjusting access control settings and security configurations on  **Render**.
 
-    
-*   ✅ Implemented **PostgreSQL** for persistent data storage and deployed the app's backend on **Render**.
-    
-*   ✅ Set up a **GitHub Actions** CI/CD pipeline to automate the build, testing, and deployment processes.
-    
-*   ✅ Managed development tasks using GitHub Projects to ensure work was broken down into manageable tasks.
-    
+## **Step 6: CI/CD Pipeline Setup**
 
-Future Features
----------------
+-   ✅ Configured  **GitHub Actions**  for an automated CI/CD pipeline to:
+    -   Build and package the project.
+    -   (In the future) run automated tests as they're developed.
+    -   Deploy the app to  **Render**  for hosting.
+-   ✅ Deployed the backend and frontend together on  **Render**  to simplify deployment and reduce complexity.
 
-Several enhancements and new features are planned for the app's future development:
+## **Step 7: Enhancements and Additions**
 
-*   **User Authentication:** To allow users to log in and manage their events.
-    
-*   **Event Editing & Deletion:** Giving users the ability to modify or delete events they've created.
-    
-*   **Google Calendar Integration:** Syncing with Google Calendar for more robust event management capabilities.
-    
-*   **UI/UX Enhancements:** Further refining the design to improve the user experience.
+-   ✅ Added user registration and authentication capabilities to enable users to manage their events securely.
+-   ✅ Implemented session management for anonymous users, allowing them to add events with a warning about potential data loss if they don’t register.
+-   ✅ Enhanced UI components to handle feedback messages for user actions, improving the user experience.
+-   ✅ Cleared up warnings and fixed minor issues based on feedback and further testing.
+
+## **Ongoing Work: Testing**
+
+-   ❗ Current limitation: No automated testing has been implemented yet outside of manual tests.
+-   ⚙️ Ongoing task: Setting up and writing unit tests to improve project reliability and catch potential issues early.
+
+## **Achievements to Date**
+
+-   ✅ Successfully deployed the app to  [Render](https://calendar-event-app.onrender.com/), where it's fully functional and live.
+-   ✅ Integrated  **PostgreSQL**  for persistent storage and ensured database security.
+-   ✅ Created a streamlined development process with the help of  **GitHub Actions**  for CI/CD.
+-   ✅ Used  **GitHub Projects**  to break down tasks and maintain a clear, agile workflow.
+
+## **Future Plans**
+
+-   **Complete Unit Testing**: Implement comprehensive unit tests to cover core functionalities.
+-   **Event Editing & Deletion**: Expand the current app to support editing and deleting existing events.
+-   **User-Specific Enhancements**: Enhance the user experience with better notifications and controls.
+-   **Integration with Google Calendar**: Allow syncing with Google Calendar for better event management.
+-   **UI/UX Improvements**: Continuously refine the user interface for smoother navigation and interaction.
+
 
 
